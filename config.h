@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef CONFIG_H
 #define CONFIG_H
 
@@ -18,6 +19,10 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
+    X("~/.local/bin/now-playing sbar",   1,    1) \
+    X("~/.local/bin/nettraf sbar",   1,    2) \
+    X("~/.local/bin/sys-prop",   1,    3) \
+    X("~/.local/bin/date-time",   1,    4) \
     X("", "sb-mail", 600, 1)  \
     X("", "sb-music", 0, 2)   \
     X("", "sb-disk", 1800, 3) \
@@ -30,3 +35,4 @@
     X("", "sb-date", 1, 10)
 
 #endif  // CONFIG_H
+
