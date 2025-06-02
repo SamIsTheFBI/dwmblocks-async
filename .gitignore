@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 build/
 .cache/
 compile_commands.json
+=======
+dwmblocks
+main.o
+>>>>>>> 33a869b (ignore binaries)

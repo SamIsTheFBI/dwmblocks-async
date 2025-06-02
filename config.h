@@ -1,6 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+<<<<<<< HEAD
 // String used to delimit block outputs in the status.
 #define DELIMITER "  "
 
@@ -34,3 +35,12 @@
     X("", "sb-date", 1, 10)
 
 #endif  // CONFIG_H
+=======
+const Block blocks[] = {
+    BLOCK("~/.local/bin/now-playing sbar", 1, 1),
+    BLOCK("~/.local/bin/nettraf sbar", 1, 2),
+    BLOCK("~/.local/bin/sys-prop", 1, 3),
+    // BLOCK("~/.local/bin/battery sbar", 5,    5),
+    BLOCK("~/.local/bin/date-time", 1, 4),
+};
+>>>>>>> 33a869b (ignore binaries)
