@@ -1,12 +1,11 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-<<<<<<< HEAD
 // String used to delimit block outputs in the status.
-#define DELIMITER "  "
+#define DELIMITER " "
 
 // Maximum number of Unicode characters that a block can output.
-#define MAX_BLOCK_OUTPUT_LENGTH 45
+#define MAX_BLOCK_OUTPUT_LENGTH 145
 
 // Control whether blocks are clickable.
 #define CLICKABLE_BLOCKS 1
@@ -19,28 +18,17 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)                            \
-    X("~/.local/bin/now-playing sbar", 1, 1) \
-    X("~/.local/bin/nettraf sbar", 1, 2)     \
-    X("~/.local/bin/sys-prop", 1, 3)         \
-    X("~/.local/bin/date-time", 1, 4)        \
-    X("", "sb-mail", 600, 1)                 \
-    X("", "sb-music", 0, 2)                  \
-    X("", "sb-disk", 1800, 3)                \
-    X("", "sb-memory", 10, 4)                \
-    X("", "sb-loadavg", 5, 5)                \
-    X("", "sb-mic", 0, 6)                    \
-    X("", "sb-record", 0, 7)                 \
-    X("", "sb-volume", 0, 8)                 \
-    X("", "sb-battery", 5, 9)                \
-    X("", "sb-date", 1, 10)
+    X("", "~/.local/bin/now-playing sbar", 1, 1) \
+    X("", "~/.local/bin/nettraf sbar", 1, 2)     \
+    X("", "~/.local/bin/sys-prop", 1, 3)         \
+    X("", "~/.local/bin/date-time", 1, 4)
 
 #endif  // CONFIG_H
-=======
-const Block blocks[] = {
-    BLOCK("~/.local/bin/now-playing sbar", 1, 1),
-    BLOCK("~/.local/bin/nettraf sbar", 1, 2),
-    BLOCK("~/.local/bin/sys-prop", 1, 3),
-    // BLOCK("~/.local/bin/battery sbar", 5,    5),
-    BLOCK("~/.local/bin/date-time", 1, 4),
-};
->>>>>>> 33a869b (ignore binaries)
+
+// const Block blocks[] = {
+//     BLOCK("~/.local/bin/now-playing sbar", 1, 1),
+//     BLOCK("~/.local/bin/nettraf sbar", 1, 2),
+//     BLOCK("~/.local/bin/sys-prop", 1, 3),
+//     // BLOCK("~/.local/bin/battery sbar", 5,    5),
+//     BLOCK("~/.local/bin/date-time", 1, 4),
+// };
